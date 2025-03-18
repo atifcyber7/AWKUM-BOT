@@ -3,62 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWKUM Clone</title>
+    <title>AWKUM Dialogflow Knowledge Base</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('./images.jpeg') no-repeat center center/cover;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-        }
-        .container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.6);
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-        }
-        .button {
-            background: #ff9800;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #007BFF; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
     </style>
 </head>
 <body>
+    <h1>AWKUM Dialogflow Knowledge Base</h1>
+    <table>
+        <tr>
+            <th>Intent</th>
+            <th>Training Phrases</th>
+            <th>Response</th>
+        </tr>
+
+        <tr>
+            <td>Fee_Structure</td>
+            <td>BS CS ki fees kitni hai?<br>Fee installments available hain?<br>Hostel ki fees kya hai?<br>AWKUM ke sab programs ki fee structure kya hai?<br>Kya university scholarship holders ke liye fee discount deti hai?<br>MS aur PhD programs ki fees kya hai?<br>Fee ka payment method kya hai?<br>Kya admission fee refundable hai?<br>Kya late fee charges hain?<br>Agla intent chahiye? 😎</td>
+            <td>💰 AWKUM Fee Structure: 📌 BS Programs: 50,000 PKR per semester 📌 MS/MPhil Programs: 60,000 PKR per semester 📌 PhD Programs: 80,000 PKR per semester 🏠 Hostel Fee: 20,000 PKR per semester 📌 Late Fee Charges: 500 PKR per day after due date 💳 Installments Available: Haan, finance department se rabta karein. 📆 Latest Fee Details: 🔗 https://awkum.edu.pk/fee-structure/ You said: han baqi be dedo 10 ChatGPT said: Bhai, ab 10 intents aur de raha hoon 🚀 Attractive emojis, proper links aur details ke saath! ✅</td>
+        </tr>
     
-    <div class="container">
-        <h1>Welcome to AWKUM</h1>
-        <p>Abdul Wali Khan University Mardan - Excellence in Education and Research.</p>
-        <a href="#" class="button">Explore More</a>
-    </div>
+        <tr>
+            <td>Scholarship_Details</td>
+            <td>AWKUM mein kon kon si scholarships available hain?<br>Merit scholarship ka criteria kya hai?<br>Need-based scholarship apply karne ka tareeqa kya hai?<br>Scholarship ke liye minimum marks kitne chahiyein?<br>Kya PhD students ke liye scholarships available hain?<br>Scholarship application ki last date kya hai?<br>HEC ki scholarships AWKUM students ke liye available hain?<br>Kya private scholarships bhi accept hoti hain?<br>Scholarship ka amount kitna hota hai?<br>Scholarship results kab announce hote hain?</td>
+            <td>🎓 AWKUM Scholarships Available: 📌 Merit Scholarship: 75%+ marks walay students ke liye 📌 Need-Based Scholarship: Financially weak students ke liye 📌 HEC Scholarships: Fully funded aur partial funding programs 📌 PhD & Research Scholarships: National & international funding 💰 Scholarship ka amount: Tuition fee + stipend (depends on category) 📆 Last date: Har year different hoti hai, details check karein: 🔗 https://awkum.edu.pk/scholarships/</td>
+        </tr>
+    
+        <tr>
+            <td>Campus_Facilities</td>
+            <td>AWKUM campus mein kon kon si facilities available hain?<br>Library ka system kaisa hai?<br>Sports facilities kaun kaun si hain?<br>Research labs available hain?<br>Internet aur WiFi facility hai?<br>Medical facility university provide karti hai?<br>Hostel facilities kaise hain?<br>Kya cafeteria aur food court available hai?<br>Gym aur fitness center hai?<br>Students ke liye common rooms hain?</td>
+            <td>🏫 AWKUM Campus Facilities: 📚 Library: Digital aur physical library with thousands of books ⚽ Sports Complex: Cricket, football, badminton & indoor games 🔬 Research Labs: Modern science & IT labs 📡 WiFi & Internet: High-speed campus-wide WiFi 🏥 Medical Facility: On-campus health center for students 🍕 Cafeteria: Hygienic & affordable food options 📌 Full details: 🔗 https://awkum.edu.pk/campus-facilities/</td>
+        </tr>
+    
+        <tr>
+            <td>Hostel_Facilities</td>
+            <td>AWKUM mein hostel available hain?<br>Hostel ki fees kitni hai?<br>Boys aur girls hostels alag hain?<br>Hostel ka admission process kya hai?<br>Kya hostel mein WiFi available hai?<br>Rooms single hain ya shared?<br>Hostel ka environment kaisa hai?<br>Hostel ki security kaisi hai?<br>Kya hostel mein mess aur food available hai?<br>Hostel facilities kaise hain?<br>Kya AWKUM mein hostel available hain?<br>Hostel fees kitni hai?<br>Girls hostel available hai?<br>Hostel apply karne ka process kya hai?<br>Hostel mein kitne students stay kar sakte hain?<br>Kya hostel mein mess facility hai?<br>Hostel ki timing kya hoti hai?<br>Kya hostel mein WiFi available hai?<br>Kya outsiders hostel le sakte hain?<br>Hostel admission kab open hota hai?</td>
+            <td>🏠 AWKUM Hostel Facilities: 📌 Separate Hostels: Boys aur girls hostels available 📌 Fee: 20,000 PKR per semester 📌 Facilities: WiFi, study rooms, common rooms, mess 📌 Security: 24/7 CCTV aur guards 📆 Hostel Admission Process: Apply during admission period 🔗 https://awkum.edu.pk/hostel-facilities/</td>
+        </tr>
+    
+        <tr>
+            <td>Transport_Facilities</td>
+            <td>AWKUM students ke liye transport available hai?<br>Transport ki fees kitni hai?<br>University ke buses kin routes par chalte hain?<br>Bus timings kya hain?<br>Kya female students ke liye separate transport hai?<br>Transport application process kya hai?<br>Transport service kin cities tak available hai?<br>Kya private transport bhi allow hai?<br>Bus stops aur pickup points kaha hain?<br>Kya transport schedule update hota hai?<br>AWKUM ka transport system kaisa hai?<br>University bus service available hai?<br>Transport ki fees kitni hai?<br>Bus routes kon kon se hain?<br>Kya students ko apni gaari lane ki permission hai?<br>Transport ka schedule kya hai?<br>Kya hostel students ke liye transport available hai?<br>Transport ke liye apply kaise karein?<br>Kya faculty members ke liye transport available hai?<br>Transport ka monthly charge kitna hai?</td>
+            <td>🚌 AWKUM Transport Services: 📌 Routes: Mardan, Peshawar, Nowshera, Swabi & nearby areas 📌 Fee: 5,000 - 10,000 PKR per semester (depends on route) 📌 Female Students: Separate transport available 📌 Timing: Classes ke schedule ke mutabiq 📆 Details aur Application Process: 🔗 https://awkum.edu.pk/transport/</td>
+        </tr>
+    
+        <tr>
+            <td>Job_Opportunities_Career_Services</td>
+            <td>AWKUM students ke liye job placement services hain?<br>University internship programs offer karti hai?<br>Career counseling available hai?<br>Kya AWKUM apne students ko job recommendations deti hai?<br>Kya final year students ke liye job fairs hote hain?<br>Kya online job portal available hai?<br>Kya AWKUM ke alumni ko bhi job assistance milti hai?<br>Kya freelancing aur entrepreneurship programs hain?<br>Kya companies campus recruitment karti hain?<br>Career services ka contact information kya hai?<br>AWKUM students ke liye job placement services hain?<br>Kya university internship provide karti hai?<br>Career counseling available hai?<br>Graduate students ke liye job fair hota hai?<br>Resume building help milti hai?<br>Kya university industry linkages rakhti hai?<br>Career office se kaise contact karein?<br>Kya freelancing workshops hoti hain?<br>Job market mein kis field ka scope zyada hai?<br>Kya AWKUM ke students foreign jobs ke liye eligible hain?</td>
+            <td>💼 AWKUM Career Services & Job Opportunities: 📌 Internships & Jobs: University ne multiple companies ke sath MOU sign kiye hain 📌 Job Fairs: Har semester career fairs organize kiye jate hain 📌 Career Counseling: Students ko guidance di jati hai 📌 Freelancing Workshops: Students ko digital skills sikhaye jate hain 📆 Latest Job Updates & Services: 🔗 https://awkum.edu.pk/career/</td>
+        </tr>
+    
+        <tr>
+            <td>Exam_Semester_System</td>
+            <td>AWKUM ka semester system kaisa hai?<br>Exams ka structure kya hai?<br>Kya university annual system follow karti hai?<br>Passing criteria kya hai?<br>GPA aur CGPA kaise calculate hota hai?<br>Kya supplementary exams ka option hai?<br>Attendance ka kitna percentage required hai?<br>Kya online exams ka system hai?<br>Har semester kitne months ka hota hai?<br>Exams ka schedule kaha milta hai?<br>Mujhe confirm karo, ye format perfect lag raha hai ya koi change chahiye? 😎<br>AWKUM ka semester system kaisa hai?<br>Kitne semesters hote hain ek degree mein?<br>AWKUM ka grading system kya hai?<br>Kya mid-term aur final exams hote hain?<br>Passing marks kitne hain?<br>Supplementary exams hote hain?<br>CGPA kaise calculate hota hai?<br>Kya improvement exams diye ja sakte hain?<br>AWKUM mein attendance policy kya hai?<br>Exams ke liye registration kab hoti hai?</td>
+            <td>📚 AWKUM Semester System & Exams: 📌 System: Semester-based (Spring & Fall) 📌 Exam Structure: Midterm (30%), Final (50%), Assignments & Quizzes (20%) 📌 Passing Criteria: Minimum 2.0 GPA in each semester 📌 Attendance Requirement: 75% minimum 📆 Exam Schedule & Policies: 🔗 https://awkum.edu.pk/exams/ Bhai 8 intents complete ho gaye! ✅ Agle 12 bhi likh raha hoon! 🔥 You said: Han dedo ChatGPT said: Bhai, baqi ke 12 intents bhi tayar hain! 🔥 Same attractive format + emojis + links! ✅</td>
+        </tr>
+    
+        <tr>
+            <td>Admission_Process</td>
+            <td>AWKUM ka admission process kya hai?<br>Admission online apply kar sakte hain?<br>Admission ke steps kya hain?<br>Prospectus kaha se milega?<br>Admission form fill karne ka tareeqa kya hai?<br>Kya admission test hota hai?<br>Admission fee kitni hai?<br>Apply karne ka last date kya hai?<br>Kya admission form offline submit kar sakte hain?<br>Application status kaise check karein?</td>
+            <td>🎓 AWKUM Admission Process: 📌 Step 1: Online form fill karein https://awkum.edu.pk/admissions/ 📌 Step 2: Required documents submit karein 📌 Step 3: Admission test (agar applicable ho) 📌 Step 4: Fee submit karein aur admission confirm karein 📆 Last date aur details ke liye: 🔗 https://awkum.edu.pk/admissions/</td>
+        </tr>
+    
+        <tr>
+            <td>Faculty_Details</td>
+            <td>AWKUM ke professors kaun hain?<br>Kis department mein kitne faculty members hain?<br>Kya faculty ka experience mention hai?<br>Research faculty ka background kya hai?<br>Faculty ki qualifications kya hain?<br>Kis department ka head kaun hai?<br>Kya faculty ke contacts available hain?<br>Kya faculty ki research publications check kar sakte hain?<br>Kya visiting faculty bhi hoti hai?<br>Kya international faculty available hai?</td>
+            <td>👨‍🏫 AWKUM Faculty Information: 📌 Highly Qualified Professors (PhD & MPhil holders) 📌 Departments: Science, IT, Business, Social Sciences, Engineering 📌 Research-Oriented Faculty: Publications aur international exposure 📆 Faculty List & Contact Details: 🔗 https://awkum.edu.pk/faculty/</td>
+        </tr>
+    
+        <tr>
+            <td>Research_Opportunities</td>
+            <td>AWKUM mein research ka kya system hai?<br>Research funding options kya hain?<br>Research papers submit karne ka process kya hai?<br>PhD research facilities kaise hain?<br>Kya international collaborations available hain?<br>Kya research ke liye grants milti hain?<br>Research ke liye supervisor kaise milta hai?<br>Kya research internships hoti hain?<br>Kya research publications access kar sakte hain?<br>Kya students ko research projects diya jata hai?<br>Kya AWKUM mein research programs available hain?<br>Research funding options kya hain?<br>PhD ke liye research grants available hain?<br>Research labs kon kon se hain?<br>Kya students ko research assistantship mil sakti hai?<br>Kya AWKUM international conferences host karta hai?<br>Kya undergraduate students research kar sakte hain?<br>AWKUM ka research impact kya hai?<br>Research publications ka process kya hai?<br>Kya faculty members research guide karte hain?</td>
+            <td>🔬 AWKUM Research Opportunities: 📌 Grants & Funding: HEC aur international agencies se funding available 📌 Supervised Research: Professors aur PhD scholars ke under research projects 📌 International Collaborations: Research programs with global universities 📆 Research Details & Application: 🔗 https://awkum.edu.pk/research/</td>
+        </tr>
+    
+        <tr>
+            <td>Library_Facilities</td>
+            <td>AWKUM ki library mein kya available hai?<br>Digital library ka access kaise milega?<br>Kya research journals available hain?<br>Library ki timing kya hai?<br>Kya online books issue kar sakte hain?<br>Library membership kaise milegi?<br>Library ke rules kya hain?<br>Kya library free hai ya paid?<br>Kya library mein study rooms available hain?<br>Kya library se home delivery option hai?</td>
+            <td>📚 AWKUM Library Facilities: 📌 Books & Journals: Science, IT, Business, Engineering & more 📌 Digital Library: Online access to thousands of research papers 📌 Study Rooms: Quiet zones for group & individual study 📆 Membership aur Details: 🔗 https://awkum.edu.pk/library/</td>
+        </tr>
+    
+        <tr>
+            <td>Student_Clubs_Activities</td>
+            <td>AWKUM mein student clubs kaun kaun se hain?<br>Kya debate club available hai?<br>Kya cultural events hote hain?<br>Kya tech clubs available hain?<br>Sports activities kaise join karein?<br>Student societies ka registration kaise hoti hai?<br>Kya entrepreneur club hai?<br>Student union ka system kaisa hai?<br>Kya music aur arts club available hain?<br>Kya volunteer programs hain?</td>
+            <td>🎭 AWKUM Student Clubs & Activities: 📌 Debate Club, Cultural Society, Tech Club, Sports Club, Entrepreneurship Society 📌 Annual Events: Sports week, Cultural day, Tech fest, Workshops 📆 Clubs Join Karne Ke Liye: 🔗 https://awkum.edu.pk/student-life/</td>
+        </tr>
+    
+        <tr>
+            <td>IT_Services</td>
+            <td>University ka IT system kaisa hai?<br>Kya student portal available hai?<br>Kya online lectures ka system hai?<br>Kya university ka mobile app hai?<br>Kya free WiFi available hai?<br>Kya university ka apna LMS (Learning Management System) hai?<br>Kya students ke liye free software licenses available hain?<br>Kya biometric attendance system hai?<br>IT helpdesk ka contact kya hai?<br>Kya computer labs available hain?<br>Mujhe confirm karo ye format theek hai ya kuch aur improve karun? 😎</td>
+            <td>💻 AWKUM IT Services: 📌 Student Portal & LMS: Online lectures, assignments & grades 📌 Free WiFi: Campus-wide internet access 📌 Computer Labs: Modern systems with latest software 📆 IT Helpdesk & Support: 🔗 https://awkum.edu.pk/it-services/ 🔥 Baaki ke 6 intents bhi likh raha hoon! 💪 You said: han sahi hai ChatGPT said: 🔥 Great! Baaki ke 6 intents bhi likh raha hoon. Jaldi deta hoon! ⏳💪 Stay tuned! 🚀 You said: han dedo ChatGPT said: Lo bhai, baaki ke 6 intents bhi tayar hain! 🎉🔥</td>
+        </tr>
+    
+    </table>
 </body>
-<script type="text/javascript">
-    (function(d, m){
-        var kommunicateSettings = 
-            {"appId":"1b958387d6223e4bd5b5bd0835dcb6552","popupWidget":true,"automaticChatOpenOnNavigation":true};
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-        window.kommunicate = m; m._globals = kommunicateSettings;
-    })(document, window.kommunicate || {});
-/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-</script>
 </html>
